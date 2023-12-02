@@ -1,0 +1,142 @@
+/* Resetting default styles and setting the font */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+/* Styling the overall container */
+.container {
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #3D30A2, #C683D7);
+    padding: 10px;
+}
+
+/* Styles for the main To-Do App section */
+.to-do-app {
+    width: 100%;
+    max-width: 540px;
+    margin: 100px auto 20px;
+    background-color: #fff;
+    padding: 40px 30px 70px;
+    border-radius: 10px;
+}
+
+/* Styles for the To-Do App heading */
+.to-do-app h2 {
+    color: #002765;
+    display: flex;
+    align-items: center;
+    margin: 20px;
+}
+
+/* Styles for the icon within the To-Do App heading */
+.to-do-app .icon {
+    width: 30px;
+    margin-left: 10px;
+}
+
+/* Styles for the row containing the input field and button */
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #edeef0;
+    border-radius: 30px;
+    margin-bottom: 25px;
+    padding-left: 20px;
+}
+
+/* Styles for the input field */
+.row .inputfield {
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 10px;
+    font-weight: 14px;
+}
+
+/* Styles for the 'Add' button */
+.row .add {
+    background-color: #C683D7;
+    border-radius: 30px;
+    padding: 12px 25px;
+    border: none;
+    outline: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* Styles for the list items in the To-Do List */
+.list-container li {
+    list-style: none;
+    padding: 12px 8px 12px 50px;
+    cursor: pointer;
+    user-select: none;
+    font-size: small;
+    position: relative;
+}
+
+/* Styles for the checkbox icon before the list items */
+.list-container li::before {
+    content: '';
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-image: url(Images/unchecked.png);
+    background-position: center;
+    background-size: cover;
+    top: 10px;
+    left: 20px;
+}
+
+.list-container .checked {
+    text-decoration: line-through;
+    color: grey;
+}
+
+.list-container .checked::before {
+    position: absolute;
+    background-image: url(Images/checked.png);
+}
+
+.alert {
+    /* margin-top: 50px; */
+    padding-bottom: 10px;
+    text-align: center;
+    font-size: larger;
+    color: white;
+    text-shadow: 1px 0.5px grey;
+    display: none;
+}
+
+li button {
+    position: absolute;
+    right: 0px;
+    width: 20px;
+    border: none;
+    outline: none;
+    background-color: #fff;
+    color: #FF6969;
+    border-radius: 20px;
+    font-size: small;
+    height: 40%;
+}
+
+li button:hover {
+    position: absolute;
+    right: 0px;
+    width: 20px;
+    border: none;
+    outline: none;
+    background-color: #FF6969;
+    color: #fff;
+    border-radius: 20px;
+    font-size: medium;
+    height: 50%;
+
+}
