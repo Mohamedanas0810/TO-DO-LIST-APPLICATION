@@ -4,8 +4,7 @@ var alertmsg = document.querySelector(".alert");
 button.addEventListener("click", function () {
     var inputvalue = document.querySelector(".inputfield");
     if (inputvalue.value === "") {
-        // alert("Enter a value");
-        alertmsg.style.display = "block";
+        alert("Enter a value");
     }
     else {
         //Add Row by creating element
@@ -16,7 +15,6 @@ button.addEventListener("click", function () {
         //Add row by adding inner html
         //\u00d7 - X symbol
         Listtable.innerHTML = Listtable.innerHTML + "<li>" + inputvalue.value + "<button>\u00d7</button></li>";
-        alertmsg.style.display = "none";
         inputvalue.value = "";
         SaveData();
     }
